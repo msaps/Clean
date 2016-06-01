@@ -1,5 +1,5 @@
 # Blank Space
-Custom OS X Configuration and Dotfile script for setting up a brand new clean Mac.
+Custom OS X Configuration and Dotfile script for setting up a brand new clean development machine.
 
 ### Setup
 Open terminal and enter the following commands:
