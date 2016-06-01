@@ -1,4 +1,4 @@
-# BlankSpace
+# Blank Space
 Custom OS X Configuration and Dotfile script for setting up a brand new clean Mac.
 
 ### Setup
