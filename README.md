@@ -1,5 +1,5 @@
-# Tailor
-Custom OS X Configuration and Dotfile script.
+# BlankSpace
+Custom OS X Configuration and Dotfile script for setting up a brand new clean Mac.
 
 ### Setup
 Open terminal and enter the following commands:
