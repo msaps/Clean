@@ -23,3 +23,4 @@ install_cask github;
 install_cask atom;
 install_cask spotify;
 install_cask p4merge;
+install_cask macdown;
