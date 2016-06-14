@@ -9,3 +9,5 @@ git --work-tree=$HOME --git-dir=$HOME/.files.git remote add origin https://githu
 git --work-tree=$HOME --git-dir=$HOME/.files.git pull origin master && \
 make osx
 ```
+
+Inspired by [DanToml](https://github.com/DanToml/Dotfiles)
