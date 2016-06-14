@@ -10,9 +10,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ##  General UI/UX                                                            ##
 ###############################################################################
 
-# Set highlight color to purple
-defaults write NSGlobalDomain AppleHighlightColor -string "0.968627 0.831373 1.000000"
-
 # Disable smart quotes by default because code.
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
@@ -76,7 +73,7 @@ defaults write com.apple.dock tilesize -int 45
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 # Hide Safari's bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 # Enable Safari's debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -104,4 +101,3 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" -string "@\\
 ###############################################################################
 
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly YES
-

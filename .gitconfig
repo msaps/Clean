@@ -1,6 +1,6 @@
 [user]
-    name = Daniel Tomlinson
-    email = Dan@Tomlinson.io
+    name = Merrick Sapsford
+    email = merrick@sapsford.tech
     signingkey = 3CE43CC7
 [core]
     excludesfile = ~/.gitignore
@@ -49,11 +49,6 @@
     undo  = reset --soft HEAD^
     fixup = commit --amend --no-edit
     current = rev-parse --abbrev-ref HEAD
-[difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
 [fetch]
     prune = true
 [branch]
