@@ -1,8 +1,8 @@
-.PHONY: all osx homebrew homebrew-packages ruby-packages xcode alcatraz airport osx-config swift
+.PHONY: all macOS homebrew homebrew-packages ruby-packages xcode alcatraz airport macOS-config swift
 
 all: ruby-packages
 
-osx: all homebrew swift alcatraz airport osx-config
+macOS: all homebrew swift alcatraz airport osx-config
 
 homebrew:
 	./Brewfile.sh
@@ -25,5 +25,5 @@ alcatraz:
 airport:
 	sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
 
-osx-config:
-	./.osx-config
+macOS-config:
+	./.macOS-config
