@@ -75,7 +75,7 @@ defaults write com.apple.dock static-only -bool TRUE
 # Prevent Safari from opening 'safe' files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
-# Hide Safari's bookmarks bar by default
+# Show Safari's bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 # Enable Safari's debug menu

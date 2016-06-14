@@ -1,8 +1,8 @@
-.PHONY: all macOS homebrew homebrew-packages ruby-packages xcode alcatraz airport macOS-config swift
+.PHONY: all macOS homebrew homebrew-packages ruby-packages xcode alcatraz airport macOS-config
 
 all: ruby-packages
 
-macOS: all homebrew swift alcatraz airport osx-config
+macOS: all homebrew xcode alcatraz airport osx-config
 
 homebrew:
 	./Brewfile.sh
@@ -14,10 +14,6 @@ ruby-packages:
 xcode:
 	xcode-install install 6.3
 	xcode-install install 7.2
-
-swift:
-	swiftenv install 2.2-SNAPSHOT-2016-01-11-a
-	swiftenv global 2.2-SNAPSHOT-2016-01-11-a
 
 alcatraz:
 	curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
