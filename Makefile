@@ -12,8 +12,8 @@ ruby-packages:
 	bundle install
 
 xcode:
-	xcode-install install 6.3
-	xcode-install install 7.2
+	xcversion install 6.4
+	xcversion install 7.3
 
 alcatraz:
 	curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
