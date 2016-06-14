@@ -2,7 +2,7 @@
 
 all: ruby-packages
 
-macOS: all homebrew xcode alcatraz airport osx-config
+macOS: all homebrew xcode alcatraz airport macOS-config
 
 homebrew:
 	./Brewfile.sh
