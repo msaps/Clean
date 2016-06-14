@@ -2,12 +2,9 @@
 
 all: ruby-packages
 
-osx: homebrew homebrew-packages swift alcatraz airport osx-config
+osx: all homebrew swift alcatraz airport osx-config
 
 homebrew:
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-homebrew-packages:
 	./Brewfile.sh
 
 ruby-packages:

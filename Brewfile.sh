@@ -1,7 +1,9 @@
 #! /bin/bash
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew install caskroom/cask/brew-cask;
 brew tap caskroom/fonts;
-brew tap danieltomlinson/formulae;
 brew tap kylef/formulae;
 
 function install_brew() {
@@ -32,9 +34,6 @@ install_brew npm;
 install_brew node;
 
 install_brew kylef/formulae/swiftenv;
-
-install_brew danieltomlinson/formulae/git-cleanup;
-install_brew danieltomlinson/formulae/git-promote;
 
 install_cask audio-hijack;
 install_cask slack;
