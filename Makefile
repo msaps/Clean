@@ -1,4 +1,4 @@
-.PHONY: all osx homebrew homebrew-packages ruby-packages subtract xcode alcatraz airport osx-config swift
+.PHONY: all osx homebrew homebrew-packages ruby-packages xcode alcatraz airport osx-config swift
 
 all: ruby-packages
 
@@ -13,9 +13,6 @@ homebrew-packages:
 ruby-packages:
 	sudo gem install bundle
 	bundle install
-
-subtract:
-	git clone git://github.com/DanielTomlinson/subtract ~/.oh-my-zsh/custom/themes
 
 xcode:
 	xcode-install install 6.3

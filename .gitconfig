@@ -1,7 +1,6 @@
 [user]
     name = Merrick Sapsford
     email = merrick@sapsford.tech
-    signingkey = 3CE43CC7
 [core]
     excludesfile = ~/.gitignore
 [mergetool]
