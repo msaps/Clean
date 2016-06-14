@@ -10,7 +10,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ##  General UI/UX                                                            ##
 ###############################################################################
 
-# Disable smart quotes by default.
+# Set highlight color to purple
+defaults write NSGlobalDomain AppleHighlightColor -string "0.968627 0.831373 1.000000"
+
+# Disable smart quotes by default because code.
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable smart dashes by default because code.
@@ -65,9 +68,6 @@ defaults write com.apple.dock autohide -bool true
 # Set the icon size of Dock items to 45 points
 defaults write com.apple.dock tilesize -int 45
 
-# Only show open apps in Dock
-defaults write com.apple.dock static-only -bool TRUE
-
 ###############################################################################
 ##  Safari                                                                   ##
 ###############################################################################
@@ -75,8 +75,8 @@ defaults write com.apple.dock static-only -bool TRUE
 # Prevent Safari from opening 'safe' files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
-# Show Safari's bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool true
+# Hide Safari's bookmarks bar by default
+defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Enable Safari's debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -98,3 +98,10 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" -string "@\\U21a9"
+
+###############################################################################
+##  Tweetbot                                                                 ##
+###############################################################################
+
+defaults write com.tapbots.TweetbotMac OpenURLsDirectly YES
+
